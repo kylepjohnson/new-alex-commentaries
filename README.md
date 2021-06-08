@@ -28,3 +28,8 @@ When searching Archive.org, you will need to find the commentaries.
 # Example map
 
 Homer, Iliad, Book 1, Line 1: https://archive.org/details/firstthreebooks03homegoog/page/n122/mode/2up
+
+# Archive.org API
+
+https://archive.org/services/docs/api/internetarchive/internetarchive.html#internetarchive.ArchiveSession.search_items
+
