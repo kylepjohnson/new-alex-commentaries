@@ -40,7 +40,7 @@ For example, we can search for items related to "homer commentary" within the da
 ```
 Search customization details are available here: [link](https://archive.org/advancedsearch.php).
 
-A Few Advanced Search Tips: https://blog.archive.org/2017/04/16/a-few-advanced-search-tips/
+A Few Advanced Search Tips: [link](https://blog.archive.org/2017/04/16/a-few-advanced-search-tips/)
 
 
 ## Metadata Read API
@@ -63,8 +63,8 @@ http://archive.org/metadata/:identifier/metadata/title
 http://archive.org/metadata/:identifier/files/0/name
 ```
 
-Referred Resources: http://blog.archive.org/2013/07/04/metadata-api/
+The Internet Archive Metadata API: [link](http://blog.archive.org/2013/07/04/metadata-api/)
 
-[Internet Archive Metadata](https://archive.org/services/docs/api/metadata-schema/index.html#)
+Metadata Attributes: [Link](https://archive.org/services/docs/api/metadata-schema/index.html#)
 
 # Scraping
