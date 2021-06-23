@@ -68,4 +68,4 @@ The Internet Archive Metadata API: [link](http://blog.archive.org/2013/07/04/met
 Metadata Attributes: [Link](https://archive.org/services/docs/api/metadata-schema/index.html#)
 
 # Mapping
-`example_mapping.py` is a smaple program to generate commentary mapping of a text book from here: [Link](https://archive.org/details/firstthreebooks03homegoog/page/n123/mode/2up)
+`example_mapping.py` is a program to generate commentary mapping of a sample text book saved in `../example-texts/seymour-il-1-3.txt`, which is downloaded from Archive.org: [Link](https://archive.org/details/firstthreebooks03homegoog/page/n123/mode/2up)
