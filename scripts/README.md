@@ -67,4 +67,5 @@ The Internet Archive Metadata API: [link](http://blog.archive.org/2013/07/04/met
 
 Metadata Attributes: [Link](https://archive.org/services/docs/api/metadata-schema/index.html#)
 
-# Scraping
+# Mapping
+`example_mapping.py` is a smaple program to generate commentary mapping of a text book from here: [Link](https://archive.org/details/firstthreebooks03homegoog/page/n123/mode/2up)
