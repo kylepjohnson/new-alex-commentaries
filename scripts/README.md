@@ -68,4 +68,11 @@ The Internet Archive Metadata API: [link](http://blog.archive.org/2013/07/04/met
 Metadata Attributes: [Link](https://archive.org/services/docs/api/metadata-schema/index.html#)
 
 # Mapping
+
+## Text File Parsing (test)
 `example_mapping.py` is a program to generate commentary mapping of a sample text book saved in `../example-texts/seymour-il-1-3.txt`, which is downloaded from Archive.org: [Link](https://archive.org/details/firstthreebooks03homegoog/page/n123/mode/2up)
+
+## Epub File Parsing
+`example_epub.py` is a program to generate commentary mapping of a sample text book saved in `../example-texts/firstthreebooks03homegoog_firstthreebooks03homegoog.epub`, which is downloaded from Archive.org: [Link](https://archive.org/details/firstthreebooks03homegoog/page/n123/mode/2up)
+
+`data_structure.py` is the data structure of how commentary data is stored.
