@@ -75,7 +75,7 @@ def generate_mapping(fileName):
             mapping[curr_book][curr_line]['Line_comm'] = comm[i]
 
         # Line Commentaries
-        elif curr_book and sec_comm and re.search('^\d+. ', comm[i]):
+        elif curr_book and sec_comm and re.search('^\d{1,3}.\s', comm[i]):
             curr_line = 'Line' + re.search('^\d+. ', comm[i]).group()[:-2]
             mapping[curr_book][curr_line] = {}
             mapping[curr_book][curr_line]['Page'] = curr_page
@@ -147,7 +147,7 @@ def page_mapping(fileName, book, line):
         page_num = str(mapping[search_book][search_line]['Page'] + 122)
         link = 'https://archive.org/details/firstthreebooks03homegoog/page/n'+page_num+'/mode/2up'
         return link
-    except KeyError:
+    except ValueError:
         print("Sorry no commentary found.")
         
 
