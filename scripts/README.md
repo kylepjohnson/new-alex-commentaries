@@ -76,3 +76,10 @@ Metadata Attributes: [Link](https://archive.org/services/docs/api/metadata-schem
 `example_epub.py` is a program to generate commentary mapping of a sample text book saved in `../example-texts/firstthreebooks03homegoog_firstthreebooks03homegoog.epub`, which is downloaded from Archive.org: [Link](https://archive.org/details/firstthreebooks03homegoog/page/n123/mode/2up)
 
 `data_structure.py` is the data structure of how commentary data is stored.
+
+
+# Code quality notes
+
+- use `black` to format code
+- use pylint to find style help
+- use mypy to find type errors
