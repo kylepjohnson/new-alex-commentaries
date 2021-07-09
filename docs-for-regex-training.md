@@ -1,0 +1,31 @@
+This page ("Collection" in Archive.org's terms) has lots of old scholarly journals: https://archive.org/details/jstor_ejc?query=iliad&sin= . It may be a good place to start looking.
+
+
+# Regexes
+
+You will want to make a `re.compile()` for each of these or you could combine them with a pipe `|` and bring them all together into one.
+
+```
+Iliad\s\d{1,2}\.\d{1,4}
+Il\s\d{1,2}\.\d{1,4}
+
+```
+
+For these, I recommend adding the `ignorecase` parameter (ask if you don't know it).
+
+
+# Documents to scan
+
+Remember that for this task, you only need the raw text, not .pdf or .epub versions.
+
+- https://archive.org/stream/jstor-4388167/4388167_djvu.txt
+- a
+
+
+## Difficult examples for later!
+
+Sometimes in old texts scholars will use Greek letters for Book numbers:
+
+- https://archive.org/stream/jstor-289485/289485_djvu.txt
+- https://archive.org/details/jstor-3287873/page/n3/mode/2up
+- https://archive.org/details/jstor-849678/page/n3/mode/2up
