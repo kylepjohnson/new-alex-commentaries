@@ -334,7 +334,7 @@ model = BertForTokenClassification.from_pretrained(
 
 from transformers import TrainingArguments
 
-training_args = TrainingArguments("test_trainer")
+training_args = TrainingArguments("test_trainer-with-gpu")
 
 
 # In[22]:
@@ -358,4 +358,4 @@ trainer.train()
 
 
 
-trainer.save_model('bert_ner_finetuned_iliad.model')
+trainer.save_model('bert_ner_finetuned_iliad-with-gpu.model')
