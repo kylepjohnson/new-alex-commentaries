@@ -358,3 +358,4 @@ trainer.train()
 
 
 
+trainer.save_model('bert_ner_finetuned_iliad.model')
