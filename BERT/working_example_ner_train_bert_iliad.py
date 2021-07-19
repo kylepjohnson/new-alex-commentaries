@@ -22,7 +22,8 @@ IntListList = List[IntList] # A List of List of token_ids, e.g. a Batch
 # In[3]:
 
 
-pattern = r' ([A-Z].[a-z]+)'
+#pattern = r' ([A-Z].[a-z]+)'
+pattern = r'( \b[A-Z][a-z]+\b)(\s\b[A-Z][a-z]+\b)*'
 re.compile(pattern)
 
 def get_annotations(text, pattern):
@@ -334,7 +335,7 @@ model = BertForTokenClassification.from_pretrained(
 
 from transformers import TrainingArguments
 
-training_args = TrainingArguments("test_trainer-with-gpu")
+training_args = TrainingArguments("test_trainer-with-gpu-pattern2")
 
 
 # In[22]:
@@ -358,4 +359,4 @@ trainer.train()
 
 
 
-trainer.save_model('bert_ner_finetuned_iliad-with-gpu.model')
+trainer.save_model('bert_ner_finetuned_iliad-with-gpu-pattern2.model')
