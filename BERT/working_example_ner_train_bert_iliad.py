@@ -23,7 +23,7 @@ IntListList = List[IntList] # A List of List of token_ids, e.g. a Batch
 
 
 #pattern = r' ([A-Z].[a-z]+)'
-pattern = r'( \b[A-Z][a-z]+\b)(\s\b[A-Z][a-z]+\b)*'
+pattern = r' (\b[A-Z][a-z]+\b)(\s\b[A-Z][a-z]+\b)*'
 re.compile(pattern)
 
 def get_annotations(text, pattern):
