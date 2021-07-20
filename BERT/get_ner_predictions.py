@@ -20,7 +20,7 @@ def get_predictions(filename, outputName):
     book_lines = [line for line in book_lines if line]
 
     pred = []
-    for line in book_lines[:10]:
+    for line in book_lines:
         line_tokens = tokenizer.tokenize(tokenizer.decode(tokenizer.encode(line)))
         line_inputs = tokenizer.encode(line, return_tensors="pt")
         line_outputs = model(line_inputs).logits
