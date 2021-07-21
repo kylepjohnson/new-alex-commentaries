@@ -21,3 +21,13 @@ Calculate metrics for each label, and find their unweighted mean. This does not 
 
 `weighted`:
 Calculate metrics for each label, and find their average weighted by support (the number of true instances for each label). This alters ‘macro’ to account for label imbalance; it can result in an F-score that is not between precision and recall.
+
+## Referred Resources
+
+seqeval: https://github.com/chakki-works/seqeval
+
+Entity Level Evaluation for NER Task: https://towardsdatascience.com/entity-level-evaluation-for-ner-task-c21fb3a8edf
+
+Named-Entity evaluation metrics based on entity-level: http://www.davidsbatista.net/blog/2018/05/09/Named_Entity_Evaluation/
+
+sklearn.metrics.precision_score: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html
