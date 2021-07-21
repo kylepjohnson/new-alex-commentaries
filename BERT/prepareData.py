@@ -37,10 +37,10 @@ def prepare_data(FileName, pattern):
   
     for line in book:
         line = line.strip()
-
-        line_data = dict()
-        line_data['content'] = line
-        line_data['annotations'] = get_annotations(line, pattern)
-        dataset.append(line_data)
+        if line:
+            line_data = dict()
+            line_data['content'] = line
+            line_data['annotations'] = get_annotations(line, pattern)
+            dataset.append(line_data)
 
     return dataset
