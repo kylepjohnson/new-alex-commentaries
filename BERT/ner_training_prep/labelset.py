@@ -1,7 +1,7 @@
 import itertools
 from typing import List
 
-from alignment import align_tokens_and_annotations_bilou
+from .alignment import align_tokens_and_annotations_bilou
 
 
 class LabelSet:

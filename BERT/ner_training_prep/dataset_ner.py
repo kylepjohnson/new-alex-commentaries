@@ -1,8 +1,10 @@
 from dataclasses import dataclass
 from torch.utils.data import Dataset
-from transformers import PreTrainedTokenizerFast
-from labelset import LabelSet
 from typing import List, Any
+
+from transformers import PreTrainedTokenizerFast
+
+from .labelset import LabelSet
 
 IntList = List[int]  # A list of token_ids
 IntListList = List[IntList]  # A List of List of token_ids, e.g. a Batch
