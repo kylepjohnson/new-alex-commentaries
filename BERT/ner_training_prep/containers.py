@@ -1,3 +1,4 @@
+"""This module defines a class for training batch."""
 import torch
 from dataclasses import dataclass
 from typing import List, Any
@@ -5,13 +6,14 @@ from typing import List, Any
 IntList = List[int]  # A list of token_ids
 IntListList = List[IntList]  # A List of List of token_ids, e.g. a Batch
 
+"""This class shows the data structure inherited by TrainingBatch."""
 @dataclass
 class TrainingExample:
     input_ids: IntList
     attention_mask: IntList
     labels: IntList
 
-
+"""This class defines Training Batch for ner citation classification training."""
 class TraingingBatch:
     def __getitem__(self, item):
         return getattr(self, item)
