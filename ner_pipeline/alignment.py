@@ -1,6 +1,6 @@
 """This module is a function that aligns tokens using BILOU."""
 
-from tokenizers import Encoding
+from tokenizers import Encoding  # type: ignore
 
 
 def align_tokens_and_annotations_bilou(tokenized: Encoding, annotations):

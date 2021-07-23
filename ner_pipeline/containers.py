@@ -35,6 +35,6 @@ class TraingingBatch:
             input_ids.append(ex.input_ids)
             masks.append(ex.attention_mask)
             labels.append(ex.labels)
-        self.input_ids = torch.LongTensor(input_ids)
-        self.attention_mask = torch.LongTensor(masks)
-        self.labels = torch.LongTensor(labels)
+        self.input_ids = torch.LongTensor(input_ids)  # pylint: disable=no-member
+        self.attention_mask = torch.LongTensor(masks)  # pylint: disable=no-member
+        self.labels = torch.LongTensor(labels)  # pylint: disable=no-member

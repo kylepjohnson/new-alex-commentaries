@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import List, Any
 from torch.utils.data import Dataset
 
-from transformers import PreTrainedTokenizerFast
+from transformers import PreTrainedTokenizerFast  # type: ignore
 
 from .labelset import LabelSet
 
@@ -88,5 +88,4 @@ class TrainingDataset(Dataset):
         return len(self.training_examples)
 
     def __getitem__(self, idx) -> TrainingExample:
-
         return self.training_examples[idx]
