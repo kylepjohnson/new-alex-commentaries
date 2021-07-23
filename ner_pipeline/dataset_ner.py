@@ -88,5 +88,4 @@ class TrainingDataset(Dataset):
         return len(self.training_examples)
 
     def __getitem__(self, idx) -> TrainingExample:
-
         return self.training_examples[idx]
