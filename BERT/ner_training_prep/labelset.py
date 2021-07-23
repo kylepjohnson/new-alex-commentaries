@@ -1,10 +1,14 @@
+"""This module labels the training data for ner citation classification training."""
+
 import itertools
 from typing import List
 
-from alignment import align_tokens_and_annotations_bilou
+from .alignment import align_tokens_and_annotations_bilou
 
 
 class LabelSet:
+    """This class assigns labels for input ner training data."""
+
     def __init__(self, labels: List[str]):
         self.labels_to_id = {}
         self.ids_to_label = {}
@@ -12,11 +16,11 @@ class LabelSet:
         self.ids_to_label[0] = "O"
         num = 0  # in case there are no labels
         # Writing BILU will give us incremntal ids for the labels
-        for _num, (label, s) in enumerate(itertools.product(labels, "BILU")):
+        for _num, (label, bilu) in enumerate(itertools.product(labels, "BILU")):
             num = _num + 1  # skip 0
-            l = f"{s}-{label}"
-            self.labels_to_id[l] = num
-            self.ids_to_label[num] = l
+            new_label = f"{bilu}-{label}"
+            self.labels_to_id[new_label] = num
+            self.ids_to_label[num] = new_label
         # Add the OUTSIDE label - no label for the token
 
     def get_aligned_label_ids_from_annotations(self, tokenized_text, annotations):

@@ -1,3 +1,5 @@
+"""This module is a function that aligns tokens using BILOU."""
+
 from tokenizers import Encoding
 
 
@@ -5,11 +7,12 @@ def align_tokens_and_annotations_bilou(tokenized: Encoding, annotations):
     """Indentify the beginning, middle, and end of an entity based on tokens.
 
     Args:
-        tokenized (Encoding): Encoded tokens
-        annotations (list): A list of dictionaries. E.g. [{'start': int, 'end': int, 'label': str}, ]
+        tokenized (Encoding): Encoded tokens.
+        annotations (list): A list of dictionaries.
+            E.g. [{'start': int, 'end': int, 'label': str}, ]
 
     Returns:
-        list : Tokens and their corresponding labels 
+        list : Tokens and their corresponding labels.
     """
     tokens = tokenized.tokens
     aligned_labels = ["O"] * len(
