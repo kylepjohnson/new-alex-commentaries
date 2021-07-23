@@ -1,6 +1,9 @@
+"""This module extracts the training data for ner citation classification training."""
+
 import re
 
-def get_annotations(text, pattern): 
+
+def get_annotations(text, pattern):
     """Helper function for prepare_data
 
     Args:
@@ -8,23 +11,25 @@ def get_annotations(text, pattern):
         pattern (regex expression): pattern we are looking for from the input string
 
     Returns:
-        list: A list of dictionaries recording matches we found. E.g. [{'start': int, 'end': int, 'label': str}, ]
+        list: A list of dictionaries recording matches we found.
+        E.g. [{'start': int, 'end': int, 'label': str}, ]
     """
     annotations = []
     # find all strings matching the input pattern.
-    for match in re.finditer(pattern, text): 
+    for match in re.finditer(pattern, text):
         label_dic = dict()
-        label_dic['start'] = match.start()
-        label_dic['end'] = match.end()
-        label_dic['label'] = 'CLEntity' # Entity starting with a capital letter.
+        label_dic["start"] = match.start()
+        label_dic["end"] = match.end()
+        label_dic["label"] = "CLEntity"  # Entity starting with a capital letter.
         annotations.append(label_dic)
-    return annotations    
+    return annotations
 
-def prepare_data(FileName, pattern): 
+
+def prepare_data(filename, pattern):
     """Find all strings matching the input pattern within the text file.
 
     Args:
-        FileName (str): Path to a text file
+        filename (str): Path to a text file
         pattern (regex expression): pattern we are looking for
 
     Returns:
@@ -33,14 +38,14 @@ def prepare_data(FileName, pattern):
     re.compile(pattern)
     dataset = []
 
-    book = open(FileName)
-  
+    book = open(filename)
+
     for line in book:
         line = line.strip()
         if line:
             line_data = dict()
-            line_data['content'] = line
-            line_data['annotations'] = get_annotations(line, pattern)
+            line_data["content"] = line
+            line_data["annotations"] = get_annotations(line, pattern)
             dataset.append(line_data)
 
     return dataset
