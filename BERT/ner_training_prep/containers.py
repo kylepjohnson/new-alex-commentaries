@@ -1,20 +1,26 @@
-"""This module defines a class for training batch."""
-import torch
+"""This module defines a class for ner training batch."""
+
 from dataclasses import dataclass
-from typing import List, Any
+from typing import List
+import torch
+
 
 IntList = List[int]  # A list of token_ids
 IntListList = List[IntList]  # A List of List of token_ids, e.g. a Batch
 
-"""This class shows the data structure inherited by TrainingBatch."""
+
 @dataclass
 class TrainingExample:
+    """This class shows the data structure inherited by TrainingBatch."""
+
     input_ids: IntList
     attention_mask: IntList
     labels: IntList
 
-"""This class defines Training Batch for ner citation classification training."""
+
 class TraingingBatch:
+    """This class defines Training Batch for ner citation classification training."""
+
     def __getitem__(self, item):
         return getattr(self, item)
 
@@ -32,4 +38,3 @@ class TraingingBatch:
         self.input_ids = torch.LongTensor(input_ids)
         self.attention_mask = torch.LongTensor(masks)
         self.labels = torch.LongTensor(labels)
-        

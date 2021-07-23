@@ -1,4 +1,5 @@
 """This module is a function that aligns tokens using BILOU."""
+
 from tokenizers import Encoding
 
 

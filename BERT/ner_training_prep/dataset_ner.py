@@ -1,6 +1,8 @@
+"""This module builds up the ner training dataset for ner citation classification training."""
+
 from dataclasses import dataclass
-from torch.utils.data import Dataset
 from typing import List, Any
+from torch.utils.data import Dataset
 
 from transformers import PreTrainedTokenizerFast
 
@@ -10,15 +12,18 @@ IntList = List[int]  # A list of token_ids
 IntListList = List[IntList]  # A List of List of token_ids, e.g. a Batch
 
 
-
 @dataclass
 class TrainingExample:
+    """This class shows the data structure inherited by TrainingDataset."""
+
     input_ids: IntList
     attention_mask: IntList
     labels: IntList
 
 
 class TrainingDataset(Dataset):
+    """This class builds up ner Training dataset through tokenization, batching, and padding."""
+
     def __init__(
         self,
         data: Any,
@@ -41,9 +46,9 @@ class TrainingDataset(Dataset):
         tokenized_batch = self.tokenizer(self.texts, add_special_tokens=False)
         ###ALIGN LABELS ONE EXAMPLE AT A TIME
         aligned_labels = []
-        for ix in range(len(tokenized_batch.encodings)):
-            encoding = tokenized_batch.encodings[ix]
-            raw_annotations = self.annotations[ix]
+        for idx in range(len(tokenized_batch.encodings)):
+            encoding = tokenized_batch.encodings[idx]
+            raw_annotations = self.annotations[idx]
             aligned = label_set.get_aligned_label_ids_from_annotations(
                 encoding, raw_annotations
             )
@@ -52,7 +57,7 @@ class TrainingDataset(Dataset):
 
         ###MAKE A LIST OF TRAINING EXAMPLES. (This is where we add padding)
         self.training_examples: List[TrainingExample] = []
-        empty_label_id = "O" # no matching label
+        # empty_label_id = "O" no matching label
         for encoding, label in zip(tokenized_batch.encodings, aligned_labels):
             length = len(label)  # How long is this sequence
             for start in range(0, length, self.window_stride):
@@ -85,4 +90,3 @@ class TrainingDataset(Dataset):
     def __getitem__(self, idx) -> TrainingExample:
 
         return self.training_examples[idx]
-        
