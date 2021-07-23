@@ -85,11 +85,15 @@ regex==2021.7.1
 requests==2.25.1
 sacremoses==0.0.45
 schema==0.7.4
+scikit-learn==0.24.2
+scipy==1.7.0
 Send2Trash==1.7.1
+seqeval==1.2.2
 six==1.16.0
 soupsieve==2.2.1
 terminado==0.10.1
 testpath==0.5.0
+threadpoolctl==2.2.0
 tokenizers==0.10.3
 toml==0.10.2
 torch==1.9.0
