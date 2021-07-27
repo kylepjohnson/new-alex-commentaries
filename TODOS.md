@@ -1,4 +1,14 @@
 Tasks to do. Jiarong can mark as done
+## Train
+- Todo: Submit simple keyword search to archive.org API (eg, "iliad OR odyssey")
+- Todo: Loop through the "hits". For each book, open up plain text and run the regex that matches eg Il. 7.100
+- Todo: Write the positive examples to disk, for later training; also save (?) an equal number of negative examples
+- Todo: Train model
+
+## Inference
+- Todo: Query archive api with the same keywords
+- Todo: Loop through each book; but this time get the epub version, so can get page numbers
+- Todo: Inference every (?) paragraph; if False then do nothing; if True, then write the result to a database (eg, .csv) and save (at least) book ID and page number (taken from the <span> tag
 
 ## Week 3
 - Done: Read the epub version of the Seymour book (example in .ipynb)
