@@ -10,6 +10,12 @@ Il\.*\s.[ivxlcdm]*\.\s*\d{1,4}
 book\s*.[ivxlcdm]\.\sline\s*\d{1,4}  # Note: this one doesn't say Iliad! Could be a good idea or terrible.
 ```
 
+```
+Odyssey\s\d{1,2}\.\d{1,4}
+Od\.*\s\d{1,2}\.\d{1,4}
+Odyssey\s.[ivxlcdm]*\.\s*\d{1,4}
+Od\.*\s.[ivxlcdm]*\.\s*\d{1,4}
+```
 Let's talk about whether to include the the `Il.` or `Iliad` at the beginning of these.
 
 
