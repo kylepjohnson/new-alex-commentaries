@@ -38,7 +38,7 @@ pattern = r'Iliad\s\d{1,2}\.\d{1,4}|Il\.*\s\d{1,2}\.\d{1,4}|Iliad\s.[ivxlcdm]*\.
 # In[7]:
 
 
-labeled_data = prepare_data(search_res, pattern)
+labeled_data = prepare_data(search_res, pattern, num_of_pos = 10000, num_of_neg = 10000)
 
 
 # In[8]:
@@ -100,5 +100,5 @@ trainer.train()
 # In[ ]:
 
 
-trainer.save_model('bert_ner_il_od-with-gpu.model')
+trainer.save_model('bert_ner_il_od-with-gpu-10000.model')
 
