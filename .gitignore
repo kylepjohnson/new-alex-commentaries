@@ -1,3 +1,4 @@
+BERT/
 .DS_Store
 test_trainer*
 *.model
