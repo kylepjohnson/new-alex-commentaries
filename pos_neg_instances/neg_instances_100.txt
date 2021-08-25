@@ -1,0 +1,100 @@
+{'content': 'wBMESm ', 'annotations': []}
+{'content': '■ft*-: ', 'annotations': []}
+{'content': 'Hi ', 'annotations': []}
+{'content': 'm ', 'annotations': []}
+{'content': "• ■■:*&'■- 1 ", 'annotations': []}
+{'content': ', . .v;ii ; i- ', 'annotations': []}
+{'content': 'IB ', 'annotations': []}
+{'content': 'i . . ? /**« ', 'annotations': []}
+{'content': '1 SSrSS ', 'annotations': []}
+{'content': ':vy>< ', 'annotations': []}
+{'content': 'AV- ', 'annotations': []}
+{'content': 'JSequeat of ', 'annotations': []}
+{'content': 'IRew 1b. <L Scaooino, 2>.2>. ', 'annotations': []}
+{'content': 'to tbe Xibtaru ', 'annotations': []}
+{'content': 'of tbc ', 'annotations': []}
+{'content': 'TTlniversitp of Toronto ', 'annotations': []}
+{'content': '1901 ', 'annotations': []}
+{'content': '3^ ', 'annotations': []}
+{'content': 'BEQUEST OF ', 'annotations': []}
+{'content': 'REV. CANON SCADDING, D. b ', 'annotations': []}
+{'content': 'TORONTO, 1901. ', 'annotations': []}
+{'content': 'INTRODUCTIONS TO THE STUDY ', 'annotations': []}
+{'content': 'OF THE ', 'annotations': []}
+{'content': 'GREEK CLASSIC POETS. ', 'annotations': []}
+{'content': 'DESIGNED PRINCIPALLY FOR THE ', 'annotations': []}
+{'content': 'USE OF YOUNG PEESONS AT SCHOOL AND COLLEGE. ', 'annotations': []}
+{'content': 'HENRY NELSON COLERIDGE. ', 'annotations': []}
+{'content': 'CONTAINING, ', 'annotations': []}
+{'content': 'I. GENERAL INTRODUCTION. ', 'annotations': []}
+{'content': 'II. HOMER. \\^ i I V ', 'annotations': []}
+{'content': '>i ', 'annotations': []}
+{'content': "Ayu&n; bit rat via xu€igv7nrico; vript rhvavdiyvctjcriv. 'iva pv) ! r^r,dtu.Q'/ L 9)^us ", 'annotations': []}
+{'content': "aXXa (ttaXXav tf^oToitdiufah, tv/juvri; *** (p'tXo? xai oIkuo$ otto Tloiwrixris Urt ", 'annotations': []}
+{'content': "<$>i\\ocro<p'ia,v tfpi'Z'i.uTmTxi. — PLUTARCH. IlfiX AEI TON NEON, a. t- A. ", 'annotations': []}
+{'content': 'A young man hath great need of sound direction in the matter of his ', 'annotations': []}
+{'content': 'reading, that it be not to him an early cause of stumbling ; but rather, that ', 'annotations': []}
+{'content': 'by virtue of a previous discipline, he may with all cheerfulness, and fondness, ', 'annotations': []}
+{'content': 'and familiarity, be conducted by Poetry to the very threshold of Philosophy. ', 'annotations': []}
+{'content': 'LONDON: ', 'annotations': []}
+{'content': 'JOHN MURRAY, ALBEMARLE STREET. ', 'annotations': []}
+{'content': '1846. ', 'annotations': []}
+{'content': 'EDINBURGH : ', 'annotations': []}
+{'content': 'Printed by THOMAS ALLAN & CO. ', 'annotations': []}
+{'content': 'High Sheet. ', 'annotations': []}
+{'content': '?9 ', 'annotations': []}
+{'content': 'a ', 'annotations': []}
+{'content': 'TO ', 'annotations': []}
+{'content': 'THE REV. JOHN KEATE, D.D. ', 'annotations': []}
+{'content': 'CANON OF WINDSOR ', 'annotations': []}
+{'content': 'AND ', 'annotations': []}
+{'content': 'HEAD MASTER OF ETON, ', 'annotations': []}
+{'content': 'IN TESTIMONY OF RESPECT FOR ', 'annotations': []}
+{'content': 'THE GREAT TALENTS AND ACCOMPLISHED SCHOLARSHIP ', 'annotations': []}
+{'content': 'WHICH ', 'annotations': []}
+{'content': 'FOR TWENTY YEARS ', 'annotations': []}
+{'content': 'HAVE GOVERNED AND ANIMATED THAT SCHOOL ', 'annotations': []}
+{'content': 'IN WHICH ', 'annotations': []}
+{'content': 'THE AUTHOR RECEIVED HIS EDUCATION, ', 'annotations': []}
+{'content': 'THIS WORK ', 'annotations': []}
+{'content': 'IS GRATEFULLY INSCRIBED.* ', 'annotations': []}
+{'content': '* Dedication to the First Edition, ', 'annotations': []}
+{'content': 'CONTENTS. ', 'annotations': []}
+{'content': 'Page ', 'annotations': []}
+{'content': 'General Introduction - - 1 ', 'annotations': []}
+{'content': 'History of the Origin and Preservation of the Iliad and ', 'annotations': []}
+{'content': 'Odyssey - - - - 27 ', 'annotations': []}
+{'content': 'Translation of the Third Book of Vico Scienza Nuova. — ', 'annotations': []}
+{'content': 'On the Discovery of the true Homer - - 63 ', 'annotations': []}
+{'content': 'Chap. I. On the Philosophic Meaning attributed to ', 'annotations': []}
+{'content': 'Homer - - - - - 64 ', 'annotations': []}
+{'content': 'Chap. II. Of the Country of Homer - - 68 ', 'annotations': []}
+{'content': 'Chap. HI. Of the Age of Homer - - 69 ', 'annotations': []}
+{'content': 'Chap. IV. Of the incomparable Genius of Homer for ', 'annotations': []}
+{'content': 'Heroic Poetry - - - - 72 ', 'annotations': []}
+{'content': 'Chap. V. Some Philosophical Observations which may ', 'annotations': []}
+{'content': 'contribute to the Discovery of the true Homer - 74 ', 'annotations': []}
+{'content': 'Chap. VI. Philological Observations to the same Pur- ', 'annotations': []}
+{'content': 'pose - - - - 78 ', 'annotations': []}
+{'content': 'Chap. VII. Discovery of the true Homer - 81 ', 'annotations': []}
+{'content': 'Greek Alphabet and Materials for Writing - 85 ', 'annotations': []}
+{'content': 'Life of Homer - - 95 ', 'annotations': []}
+{'content': 'The Trojan Controversy - - • -139 ', 'annotations': []}
+{'content': 'The Iliad - - • - - 150 ', 'annotations': []}
+{'content': 'Odyssey - - • - - 231 ', 'annotations': []}
+{'content': 'Margites - - - - - 276 ', 'annotations': []}
+{'content': 'Batrachomyomachia - - - - 278 ', 'annotations': []}
+{'content': 'Hymns - •• - - 284 ', 'annotations': []}
+{'content': 'Epigrams - - - - - 317 ', 'annotations': []}
+{'content': 'Fragments - - - - 319 ', 'annotations': []}
+{'content': 'Conclusion - •- • - - 321 ', 'annotations': []}
+{'content': 'J*&2ufaxZJb8?iaa* ty JbTmJUidTiy^emarUSiraUUZtmdern;. ', 'annotations': []}
+{'content': 'JWalker Sculpt ', 'annotations': []}
+{'content': 'THE STUDY ', 'annotations': []}
+{'content': 'OF ', 'annotations': []}
+{'content': 'THE CLASSIC POETS. ', 'annotations': []}
+{'content': 'GENERAL INTRODUCTION. ', 'annotations': []}
+{'content': 'In submitting this work to the public, I trust I may ', 'annotations': []}
+{'content': 'justify myself against any charge of individual pre- ', 'annotations': []}
+{'content': 'sumption, by alleging the apparent usefulness of the ', 'annotations': []}
+{'content': 'undertaking, if well executed, and also that the matter ', 'annotations': []}

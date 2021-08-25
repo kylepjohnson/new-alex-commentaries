@@ -83,8 +83,12 @@ def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_o
     dataset = []
     positive = 0
     negative = 0
+    book_count = 0
+    pos_instances = open("pos_neg_instances/pos_instances_" + str(num_of_pos) + ".txt", "w")
+    neg_instances = open("pos_neg_instances/neg_instances_" + str(num_of_neg) + ".txt", "w")
     for item in search_res:
         book_url = "https://archive.org/details/" + item["fields"]["identifier"][0]
+        book_count += 1
         # Get the url to .txt file
         txt_url = get_txt_url(book_url)
         if txt_url:
@@ -101,18 +105,18 @@ def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_o
                     line_data["annotations"] = get_annotations(line, pattern)
                     if len(line_data["annotations"]) != 0 and positive < num_of_pos:
                         dataset.append(line_data)
+                        pos_instances.write(str(line_data)+'\n')
                         positive += 1
                     elif len(line_data["annotations"]) == 0 and negative < num_of_neg:
                         dataset.append(line_data)
+                        neg_instances.write(str(line_data)+'\n')
                         negative += 1
         if positive == num_of_pos and negative == num_of_neg:
             break
-    print("Successfully got " + str(positive) + " positive data and "+ str(negative) + " negative data!")
+    pos_instances.close()
+    neg_instances.close()
+
+    print("Successfully got " + str(positive) + " positive data and "+ str(negative) \
+        + " negative data by scraping " + str(book_count)+ " books!")
+    
     return dataset
-                        
-
-
-
-
-
-
