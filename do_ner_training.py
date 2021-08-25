@@ -1,21 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-get_ipython().run_line_magic('load_ext', 'autoreload')
-
-
-# In[2]:
-
-
-get_ipython().run_line_magic('autoreload', '2')
-
-
-# In[3]:
-
-
 import requests
 import random
 import pickle
