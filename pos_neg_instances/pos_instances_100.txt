@@ -3,7 +3,6 @@
 {'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
 {'content': 'The same lines occur in the Odyssey xxi. 350., and in ', 'annotations': [{'start': 28, 'end': 44, 'label': 'Citation'}]}
 {'content': 'the Iliad vi. 490. at the close of the interview between ', 'annotations': [{'start': 4, 'end': 17, 'label': 'Citation'}]}
-{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
 {'content': 'cp. Odyssey iv. 293 ', 'annotations': [{'start': 4, 'end': 19, 'label': 'Citation'}]}
 {'content': 'the Iliad (xix. 326-333) breaks the sequence of the verses ', 'annotations': [{'start': 4, 'end': 19, 'label': 'Citation'}]}
 {'content': 'threaten in Odyssey xi. 73. (See Leaf, "Iliad," vol. ii., ', 'annotations': [{'start': 12, 'end': 26, 'label': 'Citation'}]}
@@ -12,10 +11,16 @@
 {'content': '(except for Iliad ii. 631) it is used only for those who dwelt ', 'annotations': [{'start': 12, 'end': 25, 'label': 'Citation'}]}
 {'content': 'covers all.) When Brunn shows,^ from the Iliad (xx. 274- ', 'annotations': [{'start': 41, 'end': 55, 'label': 'Citation'}]}
 {'content': 'And Ariadne is only mentioned again in the Original Iliad xviii. 592. ', 'annotations': [{'start': 52, 'end': 68, 'label': 'Citation'}]}
+{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
 {'content': 'The Odyssey (v. 87-91) has both these passages combined ', 'annotations': [{'start': 4, 'end': 18, 'label': 'Citation'}]}
 {'content': 'The same lines occur in the Odyssey xxi. 350., and in ', 'annotations': [{'start': 28, 'end': 44, 'label': 'Citation'}]}
 {'content': 'the Iliad vi. 490. at the close of the interview between ', 'annotations': [{'start': 4, 'end': 17, 'label': 'Citation'}]}
-{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'Odyssey viii. 578, concerning subjects of poetry it ', 'annotations': [{'start': 0, 'end': 17, 'label': 'Citation'}]}
+{'content': 'harmony, as in the first simile in the Iliad ii. 87 — ', 'annotations': [{'start': 39, 'end': 51, 'label': 'Citation'}]}
+{'content': 'this class, II. ii. 144, and also that in Iliad viii. 551, ', 'annotations': [{'start': 42, 'end': 57, 'label': 'Citation'}]}
+{'content': 'example, see Iliad A. 36 ; A. 135 ; I. 313 ; T. 5 43, ', 'annotations': [{'start': 13, 'end': 24, 'label': 'Citation'}]}
+{'content': '(Iliad — as N. 481. Compare Iliad Z. 165 ; I. 673 ; ', 'annotations': [{'start': 28, 'end': 40, 'label': 'Citation'}]}
+{'content': 'Compare Odyssey A. 352 ; A. 1. ', 'annotations': [{'start': 8, 'end': 22, 'label': 'Citation'}]}
 {'content': 'writing. The first is Iliad vii. 175 fT. In this the princes ', 'annotations': [{'start': 22, 'end': 36, 'label': 'Citation'}]}
 {'content': 'sodies. Another instance he finds in Odyssey iv. 620. ', 'annotations': [{'start': 37, 'end': 52, 'label': 'Citation'}]}
 {'content': 'interpolation in Iliad xii. 372, where Pandion (an Attic ', 'annotations': [{'start': 17, 'end': 31, 'label': 'Citation'}]}
@@ -32,11 +37,12 @@
 {'content': "as * used in ship-battles ' in Iliad xv. 389, where the spears ", 'annotations': [{'start': 31, 'end': 44, 'label': 'Citation'}]}
 {'content': "' Iliad vi. 358. Odyssey xxiv. 200. Chanson de Roland^ 1466 : ", 'annotations': [{'start': 2, 'end': 15, 'label': 'Citation'}, {'start': 17, 'end': 34, 'label': 'Citation'}]}
 {'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
-{'content': 'Iliad 6. 1 68 denote some kind of alphabetical or syllabic ', 'annotations': [{'start': 0, 'end': 10, 'label': 'Citation'}]}
 {'content': 'msBUs in the Odyssey (xiv. 210-226) ', 'annotations': [{'start': 13, 'end': 30, 'label': 'Citation'}]}
 {'content': 'in the Odyssey (xix. 174) , as the with the expedition from Naupak- ', 'annotations': [{'start': 7, 'end': 24, 'label': 'Citation'}]}
-{'content': 'in Iliad vi. 290, but, like so many other points, merely in reference to ', 'annotations': [{'start': 3, 'end': 16, 'label': 'Citation'}]}
-{'content': 'allusion in the Odyssey (xi. 520) to the death of Eurypylus, ', 'annotations': [{'start': 16, 'end': 32, 'label': 'Citation'}]}
+{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'Iliad 6. 1 68 denote some kind of alphabetical or syllabic ', 'annotations': [{'start': 0, 'end': 10, 'label': 'Citation'}]}
+{'content': '(Od. 21.406 ff.). ', 'annotations': [{'start': 1, 'end': 11, 'label': 'Citation'}]}
+{'content': 'Megariaos for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
 {'content': 'writing. The first is Iliad vii. 175 ff. In this the princes ', 'annotations': [{'start': 22, 'end': 36, 'label': 'Citation'}]}
 {'content': 'sodies. Another instance he finds in Odyssey iv. 620. ', 'annotations': [{'start': 37, 'end': 52, 'label': 'Citation'}]}
 {'content': 'interpolation in Iliad xii. 372, where Pandion (an Attic ', 'annotations': [{'start': 17, 'end': 31, 'label': 'Citation'}]}
@@ -49,9 +55,10 @@
 {'content': "to be referred to in Odyssey (xi. 521) as * a woman's gifts.' ", 'annotations': [{'start': 21, 'end': 37, 'label': 'Citation'}]}
 {'content': "as ' used in ship-battles ' in Iliad xv. 389, where the speari ", 'annotations': [{'start': 31, 'end': 44, 'label': 'Citation'}]}
 {'content': '• Iliad vi. 358. Odyssey xxiv. 200. Chanson de Roland, 1466 : ', 'annotations': [{'start': 2, 'end': 15, 'label': 'Citation'}, {'start': 17, 'end': 34, 'label': 'Citation'}]}
-{'content': '(Od. 21.406 ff.). ', 'annotations': [{'start': 1, 'end': 11, 'label': 'Citation'}]}
-{'content': 'Megariaos for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'commissaries in the Iliad (xix. 44.), as evidence of a more advanced state ', 'annotations': [{'start': 20, 'end': 34, 'label': 'Citation'}]}
 {'content': 'no douht, is why Odysseus is described twice in the Iliad (ii. 260 and ', 'annotations': [{'start': 52, 'end': 66, 'label': 'Citation'}]}
+{'content': 'Megarians for Salamis, they quoted Iliad z. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'Iliad 6. 168 denote some kind of alphabetical or syllabic ', 'annotations': [{'start': 0, 'end': 12, 'label': 'Citation'}]}
 {'content': 'the dreams of Iliad 2, 244 and Odyssey G. 246 But the importance ', 'annotations': [{'start': 31, 'end': 45, 'label': 'Citation'}]}
 {'content': 'apa(j.(vos. See on Od. 3.445-463. Greece this is still done with great ', 'annotations': [{'start': 19, 'end': 28, 'label': 'Citation'}]}
 {'content': '511. See on 6. 193. 198, Od. 9.167., 14.519., 20.3; lioiv ', 'annotations': [{'start': 25, 'end': 34, 'label': 'Citation'}]}
@@ -83,18 +90,11 @@
 {'content': 'lay was some way from the chamber of Penelope (Od. 21.5-42). ', 'annotations': [{'start': 47, 'end': 55, 'label': 'Citation'}]}
 {'content': '(Od. 1.425-428): ', 'annotations': [{'start': 1, 'end': 10, 'label': 'Citation'}]}
 {'content': '2i-35>354>35 8: for W/ws Od. 1.330., 21.5). ', 'annotations': [{'start': 25, 'end': 34, 'label': 'Citation'}]}
-{'content': 'Megarians for Salamis, they quoted Iliad z. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
-{'content': 'Iliad 6. 168 denote some kind of alphabetical or syllabic ', 'annotations': [{'start': 0, 'end': 12, 'label': 'Citation'}]}
 {'content': 'e As balancing this counter-instance in Odyssey (. 419). m^X ^^ given the case ', 'annotations': [{'start': 40, 'end': 54, 'label': 'Citation'}]}
-{'content': 'this dream stands second to the pernicious dream of Iliad 2. 93 ', 'annotations': [{'start': 52, 'end': 63, 'label': 'Citation'}]}
-{'content': 'the dreams of Iliad 2, 244 and Odyssey 6. 245 But the importance ', 'annotations': [{'start': 31, 'end': 45, 'label': 'Citation'}]}
 {'content': 'The same lines occur in the Odyssey xxi. 350., and in ', 'annotations': [{'start': 28, 'end': 44, 'label': 'Citation'}]}
 {'content': 'the Iliad vi. 490. at the close of the interview between ', 'annotations': [{'start': 4, 'end': 17, 'label': 'Citation'}]}
-{'content': 'Odyssey viii. 578, concerning subjects of poetry it ', 'annotations': [{'start': 0, 'end': 17, 'label': 'Citation'}]}
-{'content': 'harmony, as in the first simile in the Iliad ii. 87 — ', 'annotations': [{'start': 39, 'end': 51, 'label': 'Citation'}]}
-{'content': 'this class, II. ii. 144, and also that in Iliad viii. 551, ', 'annotations': [{'start': 42, 'end': 57, 'label': 'Citation'}]}
-{'content': 'example, see Iliad A. 36 ; A. 135 ; I. 313 ; T. 5 43, ', 'annotations': [{'start': 13, 'end': 24, 'label': 'Citation'}]}
-{'content': '(Iliad — as N. 481. Compare Iliad Z. 165 ; I. 673 ; ', 'annotations': [{'start': 28, 'end': 40, 'label': 'Citation'}]}
-{'content': 'Compare Odyssey A. 352 ; A. 1. ', 'annotations': [{'start': 8, 'end': 22, 'label': 'Citation'}]}
-{'content': 'writing. The first is Iliad vii. 175 ff. In this the princes ', 'annotations': [{'start': 22, 'end': 36, 'label': 'Citation'}]}
-{'content': 'sodies. Another instance he finds in Odyssey iv. 620. ', 'annotations': [{'start': 37, 'end': 52, 'label': 'Citation'}]}
+{'content': 'this dream stands second to the pernicious dream of Iliad 2. 93 ', 'annotations': [{'start': 52, 'end': 63, 'label': 'Citation'}]}
+{'content': 'the dreams of Iliad 2, 244 and Odyssey 6. 245 But the importance ', 'annotations': [{'start': 31, 'end': 45, 'label': 'Citation'}]}
+{'content': "Odyssey's song about the Trojan Horse ( Od. 8.499-520), make clear ", 'annotations': [{'start': 40, 'end': 49, 'label': 'Citation'}]}
+{'content': 'today. Here is what the text of the Iliad 1.1-7 from the Loeb Classical ', 'annotations': [{'start': 36, 'end': 45, 'label': 'Citation'}]}
+{'content': 'there is. ( Od. 9.5-11) ', 'annotations': [{'start': 12, 'end': 19, 'label': 'Citation'}]}
