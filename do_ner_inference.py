@@ -23,6 +23,12 @@ from ner_pipeline.labelset import LabelSet
 model = BertForTokenClassification.from_pretrained("bert_ner_il_od-with-gpu-10000.model")
 
 
+# In[27]:
+
+
+label_list = ['O', 'B-Citation', 'I-Citation', 'L-Citation', 'U-Citation']
+
+
 # In[5]:
 
 
@@ -62,12 +68,6 @@ for instance in test_instances:
 
 
 citation_label_set = LabelSet(labels=["Citation"])
-
-
-# In[27]:
-
-
-label_list = ['O', 'B-Citation', 'I-Citation', 'L-Citation', 'U-Citation']
 
 
 # In[28]:
