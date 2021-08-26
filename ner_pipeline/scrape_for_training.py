@@ -1,5 +1,7 @@
 import requests
 import re
+import json
+import ast
 from bs4 import BeautifulSoup
 from internetarchive import search_items, get_item, Search
 
@@ -80,12 +82,14 @@ def get_annotations(text, pattern):
 
 def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_of_neg: int = 1000):
     re.compile(pattern)
-    dataset = []
     positive = 0
     negative = 0
     book_count = 0
+    
+    # check the existence of txt file
     pos_instances = open("pos_neg_instances/pos_instances_" + str(num_of_pos) + ".txt", "w")
     neg_instances = open("pos_neg_instances/neg_instances_" + str(num_of_neg) + ".txt", "w")
+    
     for item in search_res:
         book_url = "https://archive.org/details/" + item["fields"]["identifier"][0]
         book_count += 1
@@ -104,12 +108,12 @@ def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_o
                     line_data["content"] = line
                     line_data["annotations"] = get_annotations(line, pattern)
                     if len(line_data["annotations"]) != 0 and positive < num_of_pos:
-                        dataset.append(line_data)
-                        pos_instances.write(str(line_data)+'\n')
+                      
+                        pos_instances.write(str(line_data)+"\n")
                         positive += 1
                     elif len(line_data["annotations"]) == 0 and negative < num_of_neg:
-                        dataset.append(line_data)
-                        neg_instances.write(str(line_data)+'\n')
+                        
+                        neg_instances.write(str(line_data)+"\n")
                         negative += 1
         if positive == num_of_pos and negative == num_of_neg:
             break
@@ -118,5 +122,27 @@ def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_o
 
     print("Successfully got " + str(positive) + " positive data and "+ str(negative) \
         + " negative data by scraping " + str(book_count)+ " books!")
-    
-    return dataset
+    print("Positive instances are saved at: " + "pos_neg_instances/pos_instances_" + str(num_of_pos) + ".txt")
+    print("Negative instances are saved at: " + "pos_neg_instances/neg_instances_" + str(num_of_neg) + ".txt")
+   
+    return 
+
+def get_scraped_dataset_size(fileName: str) -> int:
+    file = open(fileName, "r")
+    line_count = 0
+    for line in file:
+        if line != "\n":
+            line_count += 1
+    file.close()
+    return line_count
+
+def load_scraped_data(fileName) -> list:
+    labeled_data = []
+    # load instances
+    with open(fileName) as instances_file:
+        lines = [line.strip() for line in instances_file.readlines()]
+    for line in lines:
+        line = json.dumps(ast.literal_eval(line))
+        labeled_data.append(json.loads(line))
+
+    return labeled_data
