@@ -77,7 +77,7 @@ true = []
 for instance in test_instances:
     match_tokenized_batch : BatchEncoding = tokenizer(instance["content"])
     match_tokenized_text : Encoding = match_tokenized_batch[0]
-    aligned_label_ids = clentity_label_set.get_aligned_label_ids_from_annotations(
+    aligned_label_ids = citation_label_set.get_aligned_label_ids_from_annotations(
         match_tokenized_text, instance["annotations"]
     )
     true_line_label = []
