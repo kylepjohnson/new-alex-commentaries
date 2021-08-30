@@ -7,8 +7,7 @@ from internetarchive import search_items, get_item, Search
 
 
 def do_search(keyword_string: str, fulltext: bool = True, print_res: bool = True) -> Search:
-    """Execute search, return Archive library's
-    ``Search`` object.
+    """Execute search, return Archive library's ``Search`` object.
     """
     search_res: Search = search_items(keyword_string, full_text_search=fulltext)
     if print_res:
@@ -30,35 +29,7 @@ def get_txt_url(book_url: str) -> str:
             txt_url = txt_url_candidate   
     return txt_url
 
-
-# def generate_raw_dataset(search_res: Search, num_of_searches: int = 100) -> list:
-#     """Scrape the text from ``num_of_searches`` searching results.
-#     """
-#     raw_data = []
-#     i = 0
-#     count = 0
-#     for item in search_res:
-#         if i < num_of_searches:
-#             book_url = "https://archive.org/details/" + item["fields"]["identifier"][0]
-#             # Get the url to .txt file
-#             txt_url = get_txt_url(book_url)
-#             if txt_url:
-#                 txt_url = 'https://archive.org' + txt_url
-#                 # Access to the text
-#                 txt_web_page = requests.get(txt_url)
-#                 txt_web_page_soup = BeautifulSoup(txt_web_page.text, 'html.parser')
-#                 book_content = txt_web_page_soup.find_all('pre')[0]
-#                 lines = book_content.text.split('\n')
-#                 lines = [line for line in lines if line != '']
-#                 raw_data += lines
-#                 count += 1
-#         else:
-#             break
-#         i += 1
-#     print("Successfully scraped " + str(count) + " books out of "+ str(num_of_searches) + " searching results!")
-#     return raw_data
-
-def get_annotations(text, pattern):
+def get_annotations(text, pattern) -> list:
     """Helper function for prepare_data
 
     Args:
@@ -81,6 +52,9 @@ def get_annotations(text, pattern):
 
 
 def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_of_neg: int = 1000):
+    """ From all `search_res`, scrape `num_of_pos` positive lines that include matches to the `pattern` 
+        and `num_of_neg` negative lines withou any matches found.
+    """
     re.compile(pattern)
     positive = 0
     negative = 0
@@ -93,30 +67,39 @@ def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_o
     for item in search_res:
         book_url = "https://archive.org/details/" + item["fields"]["identifier"][0]
         book_count += 1
-        # Get the url to .txt file
+        # Get the url to .txt file on the archive.org webpage 
         txt_url = get_txt_url(book_url)
         if txt_url:
-            txt_url = 'https://archive.org' + txt_url
+
             # Access to the text
+            txt_url = 'https://archive.org' + txt_url
             txt_web_page = requests.get(txt_url)
+
+            # Parse book context from the link
             txt_web_page_soup = BeautifulSoup(txt_web_page.text, 'html.parser')
             book_content = txt_web_page_soup.find_all('pre')[0]
+
+            # Go through lines of the book and find matches to the regex pattern
             lines = book_content.text.split('\n')
             for line in lines:
                 if line != '':
                     line_data = dict()
                     line_data["content"] = line
                     line_data["annotations"] = get_annotations(line, pattern)
+
+                    # positive instance found
                     if len(line_data["annotations"]) != 0 and positive < num_of_pos:
-                      
                         pos_instances.write(str(line_data)+"\n")
                         positive += 1
+
+                    # negative instance found
                     elif len(line_data["annotations"]) == 0 and negative < num_of_neg:
-                        
                         neg_instances.write(str(line_data)+"\n")
                         negative += 1
+
         if positive == num_of_pos and negative == num_of_neg:
             break
+
     pos_instances.close()
     neg_instances.close()
 
@@ -128,6 +111,9 @@ def prepare_data(search_res: Search, pattern: str, num_of_pos: int = 1000, num_o
     return 
 
 def get_scraped_dataset_size(fileName: str) -> int:
+    """
+    Return the number of instances saved in the text file path.
+    """
     file = open(fileName, "r")
     line_count = 0
     for line in file:
@@ -137,6 +123,9 @@ def get_scraped_dataset_size(fileName: str) -> int:
     return line_count
 
 def load_scraped_data(fileName) -> list:
+    """
+    Load scraped pos/neg instances data from the input text file path.
+    """
     labeled_data = []
     # load instances
     with open(fileName) as instances_file:
