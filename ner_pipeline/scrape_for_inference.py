@@ -47,4 +47,3 @@ def prepare_data(filename, pattern):
             dataset.append(line_data)
 
     return dataset
-    
