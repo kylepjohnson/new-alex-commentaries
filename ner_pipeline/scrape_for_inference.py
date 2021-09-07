@@ -5,7 +5,7 @@ import re
 from internetarchive import search_items, get_item, Search
 
 
-def get_annotations(text, pattern):
+def get_annotations(text: str, pattern):
     """Helper function for prepare_data
     Args:
         text (str): Input string
@@ -25,7 +25,7 @@ def get_annotations(text, pattern):
     return annotations
 
 
-def prepare_data(filename, pattern):
+def prepare_data(filename: str, pattern: str):
     """Find all strings matching the input pattern within the text file.
     Args:
         filename (str): Path to a text file
@@ -33,7 +33,7 @@ def prepare_data(filename, pattern):
     Returns:
         list : A list of dictionaries. E.g. {'content': str, 'annotations': list(dict)}
     """
-    re.compile(pattern)
+    # re.compile(pattern)
     dataset = []
 
     book = open(filename)

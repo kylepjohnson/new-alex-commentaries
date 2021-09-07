@@ -1,7 +1,7 @@
 import ast
 import json
 import re
-from typing import Any, Union
+from typing import Any, Union, TextIO
 
 from bs4 import BeautifulSoup
 from bs4.element import Tag
@@ -111,12 +111,12 @@ def prepare_data(
     return None
 
 
-def get_scraped_dataset_size(fileName: str) -> int:
+def get_scraped_dataset_size(file_name: str) -> int:
     """
     Return the number of instances saved in the text file path.
     """
-    file = open(fileName, "r")
-    line_count = 0
+    file: TextIO = open(file_name, "r")
+    line_count: int = 0
     for line in file:
         if line != "\n":
             line_count += 1
@@ -124,16 +124,15 @@ def get_scraped_dataset_size(fileName: str) -> int:
     return line_count
 
 
-def load_scraped_data(fileName) -> list:
+def load_scraped_data(file_name) -> list[dict[str, Union[str, dict[str, Union, str, int]]]]:
     """
     Load scraped pos/neg instances data from the input text file path.
     """
-    labeled_data = []
+    labeled_data: list[dict[str, Union[str, dict[str, Union, str, int]]]] = list()
     # load instances
-    with open(fileName) as instances_file:
+    with open(file_name) as instances_file:
         lines = [line.strip() for line in instances_file.readlines()]
     for line in lines:
         line = json.dumps(ast.literal_eval(line))
         labeled_data.append(json.loads(line))
-
     return labeled_data

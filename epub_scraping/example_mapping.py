@@ -153,8 +153,8 @@ def page_mapping(fileName, book, line):
 
 if __name__ == "__main__":
     fileName = "../example-texts/seymour-il-1-3.txt"
-    #print(generate_mapping(fileName))
+    #print(generate_mapping(file_name))
     print(string_mapping(fileName, 2, 45))
-    #print(string_mapping(fileName, 2, 45, True))
+    #print(string_mapping(file_name, 2, 45, True))
     print(page_mapping(fileName, 2, 45))
     
