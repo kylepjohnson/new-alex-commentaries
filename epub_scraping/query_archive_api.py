@@ -1,11 +1,6 @@
 """Do Boolean search on Archive.org's API."""
 
-import json
-import random
-
-import internetarchive
 from internetarchive import search_items, get_item, Search
-# from internetarchive.search import Search
 
 
 def do_search(

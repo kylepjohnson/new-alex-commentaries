@@ -1,0 +1,10 @@
+{'content': 'I Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 37, 'end': 49, 'label': 'Citation'}]}
+{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'The same lines occur in the Odyssey xxi. 350., and in ', 'annotations': [{'start': 28, 'end': 44, 'label': 'Citation'}]}
+{'content': 'the Iliad vi. 490. at the close of the interview between ', 'annotations': [{'start': 4, 'end': 17, 'label': 'Citation'}]}
+{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}
+{'content': 'cp. Odyssey iv. 293 ', 'annotations': [{'start': 4, 'end': 19, 'label': 'Citation'}]}
+{'content': 'the Iliad (xix. 326-333) breaks the sequence of the verses ', 'annotations': [{'start': 4, 'end': 19, 'label': 'Citation'}]}
+{'content': 'threaten in Odyssey xi. 73. (See Leaf, "Iliad," vol. ii., ', 'annotations': [{'start': 12, 'end': 26, 'label': 'Citation'}]}
+{'content': 'Iliad (xxiii. 103, 104) the spirits are said to be deprived of ', 'annotations': [{'start': 0, 'end': 17, 'label': 'Citation'}]}
