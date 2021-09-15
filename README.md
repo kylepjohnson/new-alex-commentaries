@@ -33,14 +33,18 @@ Homer, Iliad, Book 1, Line 1: https://archive.org/details/firstthreebooks03homeg
 
 ## Step 1: Data Scraping
 
-Query user-defined documents (for example: Homer Iliad) for citations and label the data during the process of scraping.
+Query user-defined documents, such as `Homer Iliad OR Odyssey` for citations and label the data during the process of scraping.
+
+The text data is scraped by lines and an example of the labeled data is shown as follows:\
+*{'content': 'Megarians for Salamis, they quoted Iliad 2. 558, where ', 'annotations': [{'start': 35, 'end': 47, 'label': 'Citation'}]}*\
+Here the `start` and `end` variables record the indices of the begining and end of the citation included in the `content`.
 
 The procedure of data scraping is illustrated in `1_do_scraping.ipynb`
  
 
 ## Step 2: Train BERT Model
 
-Based on the labeled dataset, train a Named Entity Recognition (NER) BERT model for citations.
+Based on the labeled dataset, train a Token Classification BERT model for Named Entity Recognition (NER) that automatically finds citations (For more information: [Link](https://huggingface.co/transformers/model_doc/bert.html#bertfortokenclassification)).
 
 The procedure of model training using a sample dataset is shown in `2_do_ner_training.ipynb`.
 
@@ -50,11 +54,13 @@ By adopting trained model, we can predict citations for input texts. The perform
 
 The procedure of inference evaluation is shown in `3_do_ner_inference.ipynb`.
 
-The evaluation of a BERT model trained on 5000 positive & 5000 negative instances is shown below.
 
 
-### Evaluation Result 
+### To Understand Evaluation Results
 
+The inference evaluation result of a BERT model trained on 5000 positive & 5000 negative citation instances is shown below.
+
+![inference_eval](https://user-images.githubusercontent.com/43858610/133504138-1f5a9908-eb0f-4770-bb80-b6de33d8549a.png)
 
 #### Variable Meaning
 1. `precision` = `tp / (tp + fp)` where tp is the number of true positives and fp the number of false positives. The precision is intuitively the ability of the classifier not to label as positive a sample that is negative.
